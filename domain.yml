@@ -12,8 +12,10 @@ intents:
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "How may I help you?"
 
   utter_cheer_up:
+  - text: "You seems pretty sad the listen to this, it might help..."
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
@@ -21,13 +23,16 @@ responses:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "You seems happy then listen to this it will..."
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye have a nice day"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am Emotunes, powered by Rasa."
+
+actions:
+  - action_emotion
 
 session_config:
   session_expiration_time: 60

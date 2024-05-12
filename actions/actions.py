@@ -41,5 +41,3 @@ class ActionEmotion(Action):
         dispatcher.utter_message(text="The raw emotion scores detected are {}".format(emotion.raw_emotion_scores))
         dispatcher.utter_message(text="The top emotions detected are {}".format(emotion.top_emotions))
         dispatcher.utter_message(text="The affect frequencies detected are {}".format(emotion.affect_frequencies))
-
-        return []
